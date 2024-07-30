@@ -1,14 +1,16 @@
 import "./navbar.scss";
-import logo from "../../img/logo.png";
+import logo from "/img/logo.png";
 import CartWidget from "./CartWidget";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          <img src={logo} width={50} alt="" /> JoyveriE
-        </a>
+        <Link to="/" className="navbar-brand">
+          <img src={logo} width={50} alt="" />
+          JoyveriE
+        </Link>
 
         <button
           className="navbar-toggler"
@@ -25,24 +27,24 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                Principal
-              </a>
+              <Link to="/" className="nav-link">
+                <p>Principal</p>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Aros
-              </a>
+              <Link to="/categoria/aros" className="nav-link">
+                <p>Aros</p>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Collares
-              </a>
+              <Link to="/categoria/collares" className="nav-link">
+                <p>Collares</p>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Pulseras
-              </a>
+              <Link to="/categoria/anillos" className="nav-link">
+                <p>Anillos</p>
+              </Link>
             </li>
           </ul>
         </div>
