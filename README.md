@@ -1,1 +1,1 @@
-### Nicolás Vera Visedo - React JS
+### Nicolás Vera Visedo - React JS Coderhouse
